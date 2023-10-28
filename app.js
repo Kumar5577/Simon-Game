@@ -9,6 +9,11 @@ let started = false;
 let highScore = 0;
 
 let h2 = document.querySelector("h2");
+let h = document.createElement("h3");
+            h1 = document.querySelector("h1");
+            h1.appendChild(h);
+            
+
 
 document.addEventListener("keypress", function(){
     if(started==false){
@@ -19,6 +24,7 @@ document.addEventListener("keypress", function(){
 });
 
 function levelUp(){
+    h.classList.add(".dnone");
     userSeq = [];
     level++;
     h2.innerText = `Level ${level}`;
@@ -80,11 +86,8 @@ function checkAns(idx){
         if(highScore<level){
             highScore = level;
         }
-        let h = document.createElement("h3");
-            h.innerText = `Your HighScore is ${highScore}`;
-            h1 = document.querySelector("h1");
-            h1.appendChild(h);
-
+        h.classList.remove(".dnone");
+        h.innerText = `Your HighScore is ${highScore}`;
         //     h.style.display = "none";
         // h.style.display = "block";
         h2.innerHTML = ` Game Over ! Your Score is <b>${level}</b> <br>Press any key to Start`;
