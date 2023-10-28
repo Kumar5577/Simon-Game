@@ -33,6 +33,8 @@ function levelUp(){
     console.log(randomIdx);
     console.log(ranColor);
     console.dir(ranBtn);
+
+    
 }
 
 function buttonFlash(btn){
@@ -76,12 +78,15 @@ function checkAns(idx){
     else{
         
         if(highScore<level){
-            highScore = level-1;
+            highScore = level;
         }
         let h = document.createElement("h3");
             h.innerText = `Your HighScore is ${highScore}`;
             h1 = document.querySelector("h1");
             h1.appendChild(h);
+
+        //     h.style.display = "none";
+        // h.style.display = "block";
         h2.innerHTML = ` Game Over ! Your Score is <b>${level}</b> <br>Press any key to Start`;
         document.querySelector("body").style.backgroundColor = "red";
        setTimeout(function(){
