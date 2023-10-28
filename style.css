@@ -1,4 +1,6 @@
 body{
+    color: white;
+    background-color: #171717;
     text-align: center;
 }
 .btn-container{
@@ -12,7 +14,7 @@ body{
     height: 150px;
     width: 150px;
     margin: 20px;
-    border: 6px solid black;
+    border: 6px solid #060606;
     border-radius: 22%;
 }
 .red{
@@ -37,7 +39,7 @@ body{
 }
 
 .userFlash{
-    box-shadow: 8px 8px 10px black;
+    box-shadow: 8px 8px 10px white;
 }
 .dnone{
     display: none;

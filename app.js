@@ -91,9 +91,9 @@ function checkAns(idx){
         //     h.style.display = "none";
         // h.style.display = "block";
         h2.innerHTML = ` Game Over ! Your Score is <b>${level}</b> <br>Press any key to Start`;
-        document.querySelector("body").style.backgroundColor = "red";
+        document.querySelector("body").style.backgroundColor = "#ff2242";
        setTimeout(function(){
-        document.querySelector("body").style.backgroundColor = "white";
+        document.querySelector("body").style.backgroundColor = "#171717";
        },250);
         reset();
 
